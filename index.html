@@ -1,39 +1,79 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nbd个人信息</title>
-    <style>  
+    <title>Nbd</title>
+    <style>
       body {
         margin: 0;
+        background-color: rgb(37, 36, 36);
+      }
+      .baiSe {
+        color: white;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .mgl10 {
+        margin-left: 10px;
+      }
+      .column {
+        flex-direction: column;
       }
     </style>
   </head>
-  <body >
-    <div style="
-    background-color : #f1f1f1;
-    text-align : center;
-    padding : 40px;">
-      <img src="https://imgloc.com/i/0XxDA.jpeg" alt='白色' width="80px" height="80px">
+  <body class="flex column">
+    <!--头部-->
+    <div
+      style="
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        border-bottom: 1px solid #999;
+      "
+      class="flex column"
+    >
+      <img
+        src="https://tse1-mm.cn.bing.net/th/id/OIP-C.pl4oNkf2qb9siuvc-_te5AHaFj?pid=ImgDet&rs=1"
+        alt="白色"
+        width="80px"
+        height="80px"
+      />
+      <p class="baiSe">Nbd</p>
     </div>
-    <div style="
-    max-width : 700px;
-    margin:30px auto;
-    padding:15px;
-    line-height:1.7 
-    ">
-    <p>我的网站</p>
-    <p>我的网站</p>
-    <p>我的网站</p>
+    <!--内容-->
+    <div
+      style="
+        padding: 15px;
+        line-height: 1.7;
+        letter-spacing: 2px;
+        border-bottom: 1px solid #999;
+      "
+      class="flex"
+    >
+      <p class="baiSe mgl10">
+        Nbd是一个16高中生取的网名,现在这个高中生正在学习编程
+      </p>
     </div>
-    <div style="
-    background-color : #f1f1f1;
-    text-align : center;
-    padding : 40px;
-    font-size : 12px">
-    <p>我的b站账户</p>
-    <a href="https://space.bilibili.com/432091035?spm_id_from=333.999.0.0">这个</a>
+    <!--结尾-->
+    <div
+      style="
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        font-size: 12px;
+      "
+      class="flex"
+    >
+      <a
+        href="https://space.bilibili.com/432091035?spm_id_from=333.999.0.0"
+        class="baiSe"
+        >我的b站账号</a
+      >
     </div>
   </body>
 </html>
