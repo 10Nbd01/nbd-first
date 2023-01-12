@@ -7,7 +7,14 @@
     <title>记录事件</title>
   </head>
   <body
-    style="background-size: 100%; background-repeat: no-repeat"
+    style="
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    "
     background="https://ts1.cn.mm.bing.net/th/id/R-C.88b5a0b8140c5c3ae2683a150b8201a1?rik=NzPINLcM7j2Cfg&riu=http%3a%2f%2fimg02.tooopen.com%2fimages%2f20131207%2fsy_50678016421.jpg&ehk=%2fAr%2fzg9Mb6wEwTyierXbUxshu0q4xrsEPM1wk3MqXr4%3d&risl=&pid=ImgRaw&r=0"
   >
     <style>
@@ -17,12 +24,6 @@
       }
       input {
         width: 100%;
-      }
-      .button {
-        position: absolute;
-        top: 350px;
-        left: 1030px;
-        background-color: rgb(255, 255, 255);
       }
       .flex {
         display: flex;
@@ -40,17 +41,19 @@
         flex-direction: column;
       }
     </style>
-    <div style="margin-left: 540px; margin-top: 350px">
+    <div
+      style="margin-left: 100px; margin-top: 0px; height: 33px; width: 500px"
+    >
       <input
         id="input2"
         type="text"
         style="
           outline-style: none;
           border: 0px;
-          height: 40px;
-          width: 500px;
           border-radius: 3px;
           font-size: 24px;
+          height: 33px;
+          width: 500px;
           font-family: Microsoft soft;
         "
         placeholder="事件"
@@ -59,9 +62,16 @@
         type="button"
         id="button"
         value="✔"
-        style="border: 0; height: 42px; width: 20px"
+        style="
+          position: absolute;
+          top: 362px;
+          left: 890px;
+          background-color: rgb(255, 255, 255);
+          border: 0;
+          height: 35px;
+          width: 20px;
+        "
         onclick="change()"
-        class="button"
       />
     </div>
 
