@@ -9,53 +9,128 @@
         margin: 0;
         background-color: rgb(37, 36, 36);
       }
-      .baiSe {
+      .white {
         color: white;
       }
       .flex {
         display: flex;
       }
-      .flex1 {
-        flex: 1;
-      }
-      .mgl10 {
-        margin-left: 10px;
-      }
       .column {
         flex-direction: column;
+      }
+      .border {
+        border-bottom: 1px solid #999;
       }
     </style>
   </head>
   <body class="flex column">
     <!--头部-->
     <div
-      style="
-        align-items: center;
-        justify-content: center;
-        padding: 40px;
-        border-bottom: 1px solid #999;
-      "
-      class="flex column"
+      style="align-items: center; justify-content: center; padding: 40px"
+      class="flex column border"
     >
       <img
         src="https://tse1-mm.cn.bing.net/th/id/OIP-C.pl4oNkf2qb9siuvc-_te5AHaFj?pid=ImgDet&rs=1"
-        alt="白色"
+        alt="白色图片"
         width="80px"
         height="80px"
       />
-      <p class="baiSe">Nbd</p>
+      <p class="white">Nbd</p>
     </div>
     <!--内容-->
     <div
-      style="
-        padding: 15px;
-        line-height: 1.7;
-        letter-spacing: 2px;
-        border-bottom: 1px solid #999;
-      "
-      class="flex"
+      style="line-height: 1.7; letter-spacing: 2px"
+      class="flex column border"
     >
-      <p class="baiSe mgl10">更多项目尽情期待</p>
+      <!--歌曲栏-->
+      <div
+        class="flex column"
+        style="
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+      >
+        <p class="white" style="margin: 0">一.歌曲</p>
+        <ol style="margin: 0">
+          <li>
+            <a
+              target="_blank"
+              class="white"
+              href="http://m10.music.126.net/20230202203736/e95de02d7564998b27947d2cc4c1428d/ymusic/a6b0/01e4/210d/7855a34743fcbb45fa610b9367b59682.mp3"
+              >始发电车与卡夫卡 n-buna</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              class="white"
+              href="http://m801.music.126.net/20230202204151/970cb8e466fae00b3d6d89c0f2f363e1/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/8317216241/8cec/f253/55e2/27290a531f026d010da400d5278f8c67.mp3"
+              >黎明前线 OrangStar</a
+            >
+          </li>
+        </ol>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+
+      <!--整活栏-->
+      <div
+        class="flex column white border"
+        style="align-items: center; justify-content: center"
+      >
+        <p>二.整活</p>
+        <!--这个是只因-->
+        <div class="flex">
+          <button
+            id="chicken"
+            style="
+              margin: 10px;
+              padding: 0;
+              background-image: url(https://img2.baidu.com/it/u=3453217441,3261472385&fm=253&fmt=auto&app=138&f=PNG?w=256&h=256);
+              width: 10em;
+              height: 10em;
+              background-size: 10em 10em;
+            "
+            onclick="change()"
+          ></button>
+          <!--下蛋区-->
+          <div class="column flex">
+            <p class="white" style="font-size: 20px">点击坤坤可以下蛋</p>
+            <!--蛋-->
+            <textarea
+              id="egg"
+              name=""
+              cols="200"
+              rows="3"
+              readonly="ture"
+              style="
+                background-color: rgb(37, 36, 36);
+                outline-style: none;
+                border: 0px;
+                border-radius: 3px;
+              "
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <!--一些文字-->
+      <div
+        class="white flex column"
+        style="align-items: center; justify-content: center"
+      >
+        <p style="margin: 0">三.项目/计划</p>
+        <p class="white">可能暑假会写一个小程序</p>
+      </div>
     </div>
     <!--结尾-->
     <div
@@ -65,13 +140,15 @@
         padding: 40px;
         font-size: 12px;
       "
-      class="flex"
+      class="flex column"
     >
       <a
         href="https://space.bilibili.com/432091035?spm_id_from=333.999.0.0"
-        class="baiSe"
+        class="white"
         >我的b站账号</a
       >
+      <p style="font-size: 10px">写这玩意真的很累</p>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
